@@ -1,8 +1,8 @@
 // Global
 
-@import "global/global.scss";
-@import "global/fonts.scss";
 @import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
 
 // Blocks
 
@@ -21,3 +21,4 @@
 @import "blocks/location.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+@import "blocks/button.scss";

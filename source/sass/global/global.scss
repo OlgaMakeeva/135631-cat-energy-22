@@ -5,15 +5,17 @@ img {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 body {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  @include oswald-regular;
   font-size: 36px;
   line-height: 36px;
-  color: black;
+  color: $basic-darkest;
+  max-width: 320px;
+  margin: 0;
+  padding: 0;
 }
 
 .page {

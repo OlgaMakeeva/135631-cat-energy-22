@@ -1,1 +1,13 @@
-// comment
+.main-nav {
+  @include oswald-medium;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.site-list__item {
+  list-style: none;
+}
+
+.site-list__item a {
+  color: $basic-darkest;
+}
