@@ -1,7 +1,3 @@
-.preview {
-  background-color: $main-lighten-accent;
-}
-
 .preview__title {
   font-size: 24px;
   line-height: 37px;
@@ -12,14 +8,18 @@
 
 .preview__desc {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
   color: $basic-darkest-accent;
+  width: 240px;
 }
 
 .preview__link {
   font-size: 16px;
   line-height: 16px;
   color: $basic-darkest;
+}
+
+.preview__wrapper {
+  width: 260px;
+  background-color: $main-lighten-accent;
+  padding-left: 20px;
 }
