@@ -18,21 +18,6 @@
   color: $basic-darkest-accent;
 }
 
-.result__wrapper p {
-  padding: 0;
-  margin: 0;
-}
-
-.result__quantity {
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.result__value {
-  @include arial(12px, 12px);
-  color: $basic-darkest-accent;
-}
-
 .example__spending {
   font-size: 14px;
   line-height: 20px;
