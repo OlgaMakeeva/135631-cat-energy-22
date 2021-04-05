@@ -1,0 +1,23 @@
+.promo {
+  color: $basic-light;
+  text-align: center;
+  background-image: url("../../img/background/cat-mask.png"), url("../../img/background/cat-index.png");
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  font-size: 14px;
+  line-height: 18px;
+}

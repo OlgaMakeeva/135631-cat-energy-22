@@ -1,0 +1,14 @@
+.contacts__title {
+  color: $special-darken;
+  width: 140px;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  @include arial(14px, 20px);
+  color: $basic-darkest-accent;
+  width: 140px;
+  display: inline-block;
+}

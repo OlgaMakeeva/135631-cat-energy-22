@@ -1,0 +1,25 @@
+.preview__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.preview__desc {
+  font-family: "Arial", sans-serif;
+  color: $basic-darkest-accent;
+  width: 240px;
+}
+
+.preview__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-darkest;
+}
+
+.preview__wrapper {
+  width: 260px;
+  background-color: $main-lighten-accent;
+  padding-left: 20px;
+}
