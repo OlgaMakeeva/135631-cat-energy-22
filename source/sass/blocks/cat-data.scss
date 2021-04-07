@@ -1,0 +1,12 @@
+.cat-data {
+  color: $basic-darkest-accent;
+}
+
+.cat-data__item {
+  padding-bottom: 20px;
+}
+
+.cat-data__item input::placeholder {
+  color: $basic-darkest-accent;
+  opacity: 1;
+}
