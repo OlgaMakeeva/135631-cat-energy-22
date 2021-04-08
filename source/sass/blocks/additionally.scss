@@ -1,3 +1,7 @@
+.additionally__list {
+  @include reset-list;
+}
+
 .additionally__item {
   padding-bottom: 25px;
 }

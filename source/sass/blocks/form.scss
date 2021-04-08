@@ -2,12 +2,6 @@
   border-style: none;
 }
 
-.form__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .form__label,
 .form__input {
   text-transform: uppercase;
@@ -22,4 +16,18 @@
 
 .form__legend {
   line-height: 16px;
+}
+
+.form__button {
+  border-style: none;
+  text-transform: uppercase;
+  height: 40px;
+  width: 280px;
+  padding: 0;
+  background-color: $basic-accent;
+  color: $basic-light;
+  font-size: 16px;
+  line-height: 20px;
+
+  @include oswald-regular;
 }

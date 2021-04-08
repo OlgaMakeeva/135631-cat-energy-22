@@ -1,9 +1,11 @@
 .button {
   display: block;
   width: 280px;
-  height: 40px;
+  height: 30px;
+  padding-top: 10px;
   background-color: $basic-accent;
   font-size: 16px;
   line-height: 20px;
   color: $basic-light;
+  text-align: center;
 }
