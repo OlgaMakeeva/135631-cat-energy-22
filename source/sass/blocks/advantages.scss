@@ -16,5 +16,5 @@
 }
 
 .advantages__list {
-  list-style: none;
+  @include reset-list;
 }

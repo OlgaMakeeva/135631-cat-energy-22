@@ -2,6 +2,10 @@
   color: $basic-darkest-accent;
 }
 
+.cat-data__list {
+  @include reset-list;
+}
+
 .cat-data__item {
   padding-bottom: 20px;
 }

@@ -2,6 +2,10 @@
   color: $special-dark;
 }
 
+.cat-program__list {
+  @include reset-list;
+}
+
 .cat-program__item {
   padding-bottom: 20px;
 }
