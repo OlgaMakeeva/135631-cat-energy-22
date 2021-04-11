@@ -32,6 +32,12 @@ $main-accent: #5eaa2f;
 
 $accent-error: #ff8282;
 
+// Viewports
+
+$mobile-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 // Fonts
 
 @mixin oswald-regular {

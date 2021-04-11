@@ -5,3 +5,18 @@
 .page-footer__wrapper--form {
   background-color: $main-lighten-accent;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__contacts {
+    position: relative;
+  }
+}

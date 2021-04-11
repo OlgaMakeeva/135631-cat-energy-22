@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,12 +11,20 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-wrapper page-header__wrapper">
-      <a class="page-header__logo logo-img" href="#">
-        <img src="img/logo-img.svg" width="33" height="37" alt="Рыжий кот">
-      </a>
-      <a class="page-header__logo logo-title" href="#">
-        <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy">
-      </a>
+      <div class="page-header__wrapper-logo">
+        <a class="page-header__logo logo-img" href="#">
+          <img src="img/logo-img.svg" width="33" height="37" alt="Рыжий кот">
+        </a>
+        <a class="page-header__logo logo-title" href="#">
+          <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy">
+        </a>
+        <a class="page-header__logo--tablet logo-img" href="#">
+          <img src="img/logo-tablet.svg" width="174" height="51" alt="Рыжий кот">
+        </a>
+        <a class="page-header__logo--desktop logo-img" href="#">
+          <img src="img/logo-desktop.svg" width="174" height="51" alt="Рыжий кот">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -42,7 +51,7 @@
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <img class="promo__img" src="img/content/promo-img.png" width="280" height="270"
           alt="Упаковка питания для котов">
-        <a class="promo__button button" href="form.html">Подобрать программу</a>
+        <a class="promo__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="preview">
@@ -119,7 +128,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <section class="page-footer__contacts contacts">
-        <div class="page-wrapper">
+        <div class="page-wrapper contacts__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
           <p class="contacts__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
@@ -128,9 +137,11 @@
       <section class="page-footer__location location">
         <h2 class="visually-hidden">Карта</h2>
         <img class="location__map" src="img/content/map.png" width="320" height="362" alt="Карта">
+        <img class="location__map--tablet" src="img/content/map-tablet.png" width="768" height="400" alt="Карта">
+        <img class="location__map--desktop" src="img/content/map-desktop.png" width="1440" height="400" alt="Карта">
       </section>
       <section class="page-footer__main">
-        <div class="page-wrapper">
+        <div class="page-wrapper page-footer__container">
           <h2 class="visually-hidden">Соцсети</h2>
           <a class="page-footer__main-logo logo-title" href="#">
             <img src="img/logo-title.svg" width="128" height="24" alt="Cat energy">

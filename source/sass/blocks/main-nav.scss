@@ -3,4 +3,22 @@
   line-height: 20px;
   font-size: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include oswald-regular;
+    line-height: 24px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

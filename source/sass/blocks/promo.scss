@@ -3,25 +3,75 @@
   text-align: center;
   background-image: url("../img/background/cat-mask.png"), url("../img/background/cat-index.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    color: $basic-darkest;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/background/cat-mask.png"), url("../img/background/cat-index.png");
+    background-position: right top;
+  }
 }
 
 .promo__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 414px;
+  }
 }
 
 .promo__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
 }
 
 .promo__button {
   font-size: 14px;
   line-height: 18px;
+  display: block;
+  width: 280px;
+  height: 30px;
+  padding-top: 10px;
+  background-color: $basic-accent;
+  color: $basic-light;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    height: 39px;
+    padding-top: 15px;
+  }
 }
 
 .promo__wrapper {
+  margin: 0 auto;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__img {
+    order: 4;
+    align-self: center;
+  }
 }
