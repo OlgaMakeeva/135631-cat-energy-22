@@ -1,3 +1,31 @@
 .location__map {
   display: block;
 }
+
+.location__map--tablet {
+  display: none;
+}
+
+.location__map--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .location__map {
+    display: none;
+  }
+
+  .location__map--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__map--tablet {
+    display: none;
+  }
+
+  .location__map--desktop {
+    display: block;
+  }
+}

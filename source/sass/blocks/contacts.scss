@@ -13,3 +13,20 @@
   width: 140px;
   display: inline-block;
 }
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    position: absolute;
+    background-color: $basic-light;
+    width: 570px;
+    height: 135px;
+    top: 95px;
+    justify-content: space-around;
+    padding-top: 66px;
+  }
+}
