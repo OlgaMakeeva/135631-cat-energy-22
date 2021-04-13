@@ -17,16 +17,23 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 0 70px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     position: absolute;
     background-color: $basic-light;
-    width: 570px;
+    width: 430px;
     height: 135px;
     top: 95px;
-    justify-content: space-around;
     padding-top: 66px;
+    margin: 0 110px;
   }
 }
