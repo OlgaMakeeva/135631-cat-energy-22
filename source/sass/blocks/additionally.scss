@@ -1,7 +1,22 @@
 .additionally__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 565px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .additionally__item {
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 220px;
+  }
 }

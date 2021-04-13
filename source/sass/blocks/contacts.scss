@@ -37,3 +37,11 @@
     margin: 0 110px;
   }
 }
+
+.contacts__wrapper--color {
+  background-color: $main-lighten-accent;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-light;
+  }
+}

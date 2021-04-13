@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,23 +11,31 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-wrapper page-header__wrapper">
-      <a class="page-header__logo-img" href="index.html">
-        <img src="img/logo-img.svg" width="33" height="37" alt="Рыжий кот">
-      </a>
-      <a class="page-header__logo-title logo-title" href="index.html">
-        <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy">
-      </a>
+      <div class="page-header__wrapper-logo">
+        <a class="page-header__logo logo-img" href="#">
+          <img src="img/logo-img.svg" width="33" height="37" alt="Рыжий кот">
+        </a>
+        <a class="page-header__logo logo-title" href="#">
+          <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy">
+        </a>
+        <a class="page-header__logo--tablet logo-img" href="#">
+          <img src="img/logo-tablet.svg" width="174" height="51" alt="Рыжий кот">
+        </a>
+        <a class="page-header__logo--desktop logo-img" href="#">
+          <img src="img/logo-desktop.svg" width="174" height="51" alt="Рыжий кот">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -89,7 +98,7 @@
           </fieldset>
 
           <fieldset class="form__contact-owner contact-owner form__fieldset">
-            <legend class="form__title">Контактные данные<br> (владельца кота)</legend>
+            <legend class="form__title">Контактные данные (владельца кота)</legend>
             <ul class="contact-owner__list">
               <li class="contact-owner__item">
                 <label class="contact-owner__label form__label">E-mail:*
@@ -146,6 +155,7 @@
               </li>
             </ul>
           </fieldset>
+          <div>
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__legend">* — Обязательные поля</p>
         </form>
@@ -154,22 +164,24 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper page-footer__wrapper--form">
+    <div class="page-footer__wrapper">
       <section class="page-footer__contacts contacts">
-        <div class="page-wrapper">
+        <div class="contacts__wrapper contacts__wrapper--color">
           <h2 class="visually-hidden">Контакты</h2>
-          <b class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</b>
+          <p class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
           <p class="contacts__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
       </section>
       <section class="page-footer__location location">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="location__map" src="img/content/map.png" width="320" height="362" alt="Карта">
+        <!--<img class="location__map" src="img/content/map.png" width="320" height="362" alt="Карта">
+        <img class="location__map--tablet" src="img/content/map-tablet.png" width="768" height="400" alt="Карта">
+        <img class="location__map--desktop" src="img/content/map-desktop.png" width="1440" height="400" alt="Карта">-->
       </section>
       <section class="page-footer__main">
-        <div class="page-wrapper">
+        <div class="page-wrapper page-footer__container">
           <h2 class="visually-hidden">Соцсети</h2>
-          <a class="page-footer__main logo-title" href="#">
+          <a class="page-footer__main-logo logo-title" href="#">
             <img src="img/logo-title.svg" width="128" height="24" alt="Cat energy">
           </a>
           <div class="page-footer__social social">
@@ -185,9 +197,9 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <span class="copyright__text">HtmlAcademy</span>
+            <span class="copyright__text">HTMLAcademy</span>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HtmlAcademy">
+              <img src="img/icon/htmlacademy.svg" width="27" height="34" alt="Логотип HtmlAcademy">
             </a>
           </div>
         </div>
