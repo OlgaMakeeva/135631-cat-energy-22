@@ -25,19 +25,3 @@
     position: relative;
   }
 }
-
-.location {
-  background-image: url("../img/content/map.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 362px;
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/content/map-tablet.png");
-    height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/content/map-desktop.png");
-  }
-}

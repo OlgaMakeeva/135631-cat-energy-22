@@ -1,31 +1,15 @@
-.location__map {
-  display: block;
-}
+.location {
+  background-image: url("../img/content/map.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 362px;
 
-.location__map--tablet {
-  display: none;
-}
-
-.location__map--desktop {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .location__map {
-    display: none;
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/content/map-tablet.png");
+    height: 400px;
   }
 
-  .location__map--tablet {
-    display: block;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .location__map--tablet {
-    display: none;
-  }
-
-  .location__map--desktop {
-    display: block;
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/content/map-desktop.png");
   }
 }

@@ -6,11 +6,20 @@
 .result__quantity {
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .result__value {
   @include arial(12px, 12px);
   color: $basic-darkest-accent;
+
+  @media (min-width: $tablet-width) {
+    @include arial(14px, 14px);
+  }
 }
 
 .result__wrapper {

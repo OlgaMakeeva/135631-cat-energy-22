@@ -11,14 +11,21 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .preview__description {
-  font-family: "Arial", sans-serif;
+  @include arial(14px, 18px);
   color: $basic-darkest-accent;
 
   @media (min-width: $tablet-width) {
     min-width: 400px;
+
+    @include arial(16px, 24px);
   }
 }
 

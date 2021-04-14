@@ -1,10 +1,15 @@
 .contacts__title {
   color: $special-darken;
   font-weight: 400;
-  width: 140px;
   display: inline-block;
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contacts__text {
@@ -12,6 +17,10 @@
   color: $basic-darkest-accent;
   width: 140px;
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    @include arial(16px, 20px);
+  }
 }
 
 .contacts__wrapper {

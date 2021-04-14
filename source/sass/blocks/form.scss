@@ -2,6 +2,10 @@
   border-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 568px;
+  }
 }
 
 .form__label,
@@ -57,5 +61,12 @@
   @media (min-width: $tablet-width) {
     padding-top: 66px;
     padding-bottom: 72px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
