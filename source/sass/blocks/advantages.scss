@@ -2,30 +2,44 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__description {
-  font-family: "Arial", sans-serif;
-  width: 200px;
+  @include arial(14px, 18px);
   color: $basic-darkest-accent;
+
+  @media (min-width: $tablet-width) {
+    @include arial(16px, 24px);
+  }
 }
 
 .advantages__list {
   @include reset-list;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto auto auto auto;
+    column-gap: 80px;
   }
 }
 
 .advantages__item {
   @media (min-width: $tablet-width) {
-    width: 250px;
+    padding-right: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 230px;
+    padding-right: 0;
   }
 }

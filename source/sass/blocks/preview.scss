@@ -11,15 +11,21 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.preview__desc {
-  font-family: "Arial", sans-serif;
+.preview__description {
+  @include arial(14px, 18px);
   color: $basic-darkest-accent;
-  width: 240px;
 
   @media (min-width: $tablet-width) {
     min-width: 400px;
+
+    @include arial(16px, 24px);
   }
 }
 
@@ -31,14 +37,18 @@
 
 .preview__wrapper {
   background-color: $main-lighten-accent;
-  width: 240px;
+  width: auto;
   padding: 0 20px;
+  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
-    min-width: 708px;
+    width: auto;
+    padding: 0 52px;
+    margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 570px;
+    width: auto;
+    margin: 0 110px;
   }
 }

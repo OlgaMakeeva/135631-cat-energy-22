@@ -8,6 +8,10 @@
 
 .contact-owner__item {
   padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 568px;
+  }
 }
 
 .contact-owner__item input::placeholder {

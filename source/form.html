@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,12 +11,20 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-wrapper page-header__wrapper">
-      <a class="page-header__logo-img" href="index.html">
-        <img src="img/logo-img.svg" width="33" height="37" alt="Рыжий кот">
-      </a>
-      <a class="page-header__logo-title logo-title" href="index.html">
-        <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy">
-      </a>
+      <div class="page-header__wrapper-logo">
+        <a class="page-header__logo logo-img" href="#">
+          <img src="img/logo-img.svg" width="33" height="37" alt="Рыжий кот">
+        </a>
+        <a class="page-header__logo logo-title" href="#">
+          <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy">
+        </a>
+        <a class="page-header__logo--tablet logo-img" href="index.html">
+          <img src="img/logo-tablet.svg" width="174" height="51" alt="Рыжий кот">
+        </a>
+        <a class="page-header__logo--desktop logo-img" href="index.html">
+          <img src="img/logo-desktop.svg" width="174" height="51" alt="Рыжий кот">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -42,55 +51,57 @@
         <p class="selection__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <form class="selection__form form" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
 
-          <fieldset class="form__cat-data cat-data form__fieldset">
-            <legend class="visually-hidden">Данные питомца</legend>
-            <ul class="cat-data__list">
-              <li class="cat-data__item">
-                <label class="cat-data__label form__label">Имя:*
-                  <input class="cat-data__input form__input" type="text" name="name" placeholder="Барсик">
-                </label>
-              </li>
-              <li class="cat-data__item">
-                <label class="cat-data__label form__label">Вес (кг):*
-                  <input class="cat-data__input form__input" type="text" name="weight" placeholder="7">
-                </label>
-              </li>
-              <li class="cat-data__item">
-                <label class="cat-data__label form__label">Возраст (лет):
-                  <input class="cat-data__input form__input" type="text" name="age" placeholder="7">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form__cat-data cat-data form__fieldset">
+              <legend class="visually-hidden">Данные питомца</legend>
+              <ul class="cat-data__list">
+                <li class="cat-data__item">
+                  <label class="cat-data__label form__label">Имя:*
+                    <input class="cat-data__input form__input" type="text" name="name" placeholder="Барсик">
+                  </label>
+                </li>
+                <li class="cat-data__item">
+                  <label class="cat-data__label form__label">Вес (кг):*
+                    <input class="cat-data__input form__input" type="text" name="weight" placeholder="7">
+                  </label>
+                </li>
+                <li class="cat-data__item">
+                  <label class="cat-data__label form__label">Возраст (лет):
+                    <input class="cat-data__input form__input" type="text" name="age" placeholder="7">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="form__cat-program cat-program form__fieldset">
-            <legend class="visually-hidden">Выбор программы</legend>
-            <ul class="cat-program__list">
-              <li class="cat-program__item">
-                <label class="cat-program__label form__label">
-                  <input class="cat-program__input cat-program__input--current" type="radio" name="program"
-                    value="slimming" checked>
-                  Похудение
-                </label>
-              </li>
-              <li class="cat-program__item">
-                <label class="cat-program__label form__label">
-                  <input class="cat-program__input" type="radio" name="program" value="weight-gain">
-                  Набор массы
-                </label>
-              </li>
-              <li class="cat-program__item">
-                <label class="cat-program__label form__label">
-                  <input class="cat-program__input" type="radio" name="program" value="advice">
-                  Не знаю (нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="form__cat-program cat-program form__fieldset">
+              <legend class="visually-hidden">Выбор программы</legend>
+              <ul class="cat-program__list">
+                <li class="cat-program__item">
+                  <label class="cat-program__label form__label">
+                    <input class="cat-program__input cat-program__input--current" type="radio" name="program"
+                      value="slimming" checked>
+                    Похудение
+                  </label>
+                </li>
+                <li class="cat-program__item">
+                  <label class="cat-program__label form__label">
+                    <input class="cat-program__input" type="radio" name="program" value="weight-gain">
+                    Набор массы
+                  </label>
+                </li>
+                <li class="cat-program__item">
+                  <label class="cat-program__label form__label">
+                    <input class="cat-program__input" type="radio" name="program" value="advice">
+                    Не знаю (нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="form__contact-owner contact-owner form__fieldset">
-            <legend class="form__title">Контактные данные<br> (владельца кота)</legend>
-            <ul class="contact-owner__list">
+            <legend class="form__title">Контактные данные (владельца кота)</legend>
+            <ul class="contact-owner__list form__wrapper">
               <li class="contact-owner__item">
                 <label class="contact-owner__label form__label">E-mail:*
                   <input class="contact-owner__input form__input" type="email" name="email"
@@ -146,6 +157,7 @@
               </li>
             </ul>
           </fieldset>
+          <div>
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__legend">* — Обязательные поля</p>
         </form>
@@ -154,22 +166,21 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper page-footer__wrapper--form">
+    <div class="page-footer__wrapper">
       <section class="page-footer__contacts contacts">
-        <div class="page-wrapper">
+        <div class="contacts__wrapper contacts__wrapper--color">
           <h2 class="visually-hidden">Контакты</h2>
-          <b class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</b>
+          <p class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
           <p class="contacts__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
       </section>
       <section class="page-footer__location location">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="location__map" src="img/content/map.png" width="320" height="362" alt="Карта">
       </section>
       <section class="page-footer__main">
-        <div class="page-wrapper">
+        <div class="page-wrapper page-footer__container">
           <h2 class="visually-hidden">Соцсети</h2>
-          <a class="page-footer__main logo-title" href="#">
+          <a class="page-footer__main-logo logo-title" href="#">
             <img src="img/logo-title.svg" width="128" height="24" alt="Cat energy">
           </a>
           <div class="page-footer__social social">
@@ -185,9 +196,9 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <span class="copyright__text">HtmlAcademy</span>
+            <span class="copyright__text">HTMLAcademy</span>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HtmlAcademy">
+              <img src="img/icon/htmlacademy.svg" width="27" height="34" alt="Логотип HtmlAcademy">
             </a>
           </div>
         </div>
