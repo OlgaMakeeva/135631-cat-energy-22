@@ -24,7 +24,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 288px;
+    min-width: 293px;
+    margin-left: 50px;
   }
 
   @include arial (14px, 14px);
