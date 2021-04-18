@@ -1,9 +1,31 @@
 .goods__link {
   color: $special-dark;
+
+  flex-basis: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+  }
 }
 
 .goods__info {
   color: $basic-darkest-accent;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 288px;
+  }
 
   @include arial (14px, 14px);
 }
@@ -11,4 +33,12 @@
 .goods__promo-text {
   @include arial (16px, 20px);
   color: $basic-light;
+}
+
+.goods__order-link {
+  flex-basis: 100%;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 244px;
+  }
 }

@@ -1,7 +1,46 @@
 .main-goods__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .main-goods__item {
-  padding-bottom: 20px;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 35%;
+    margin-bottom: 60px;
+    padding-left: 39px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    background-color: $main-lighten-accent;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 14%;
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-right: 80px;
+  }
+}
+
+.main-goods__item:nth-child(4n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
