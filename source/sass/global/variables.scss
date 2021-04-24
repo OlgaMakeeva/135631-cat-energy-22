@@ -20,6 +20,7 @@ $basic-lighten: #d3d3d3;
 $main-light: #ebebeb;
 $main-lighten: #eaeaea;
 $main-light-accent: #e7e7e7;
+$special-light-accent: #e6e6e6;
 $main-lighten-accent: #f2f2f2;
 
 $basic-light: #ffffff;
@@ -34,7 +35,8 @@ $accent-error: #ff8282;
 
 // Viewports
 
-$mobile-width: 767px;
+//$mobile-width: 767px;
+$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 
