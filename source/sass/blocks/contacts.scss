@@ -5,6 +5,8 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 28px;
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -15,11 +17,20 @@
 .contacts__text {
   @include arial(14px, 20px);
   color: $basic-darkest-accent;
-  width: 140px;
   display: inline-block;
+  margin-bottom: 28px;
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
     @include arial(16px, 20px);
+    text-align: right;
+  }
+}
+
+.contacts__text--indent {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding-top: 10px;
   }
 }
 

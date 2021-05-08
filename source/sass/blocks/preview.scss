@@ -1,4 +1,8 @@
 .preview {
+  @media (min-width: $tablet-width) {
+    margin-top: 210px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -11,19 +15,24 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    text-align: left;
   }
 }
 
 .preview__description {
   @include arial(14px, 18px);
   color: $basic-darkest-accent;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $basic-light-accent;
 
   @media (min-width: $tablet-width) {
     min-width: 400px;
+    border: none;
 
     @include arial(16px, 24px);
   }
@@ -35,16 +44,23 @@
   color: $basic-darkest;
 }
 
+.preview__link:active {
+  color: $basic-darkest03;
+}
+
 .preview__wrapper {
   background-color: $main-lighten-accent;
   width: auto;
-  padding: 0 20px;
-  margin: 0 20px;
+  padding: 20px 20px;
+  margin: 20px 20px;
 
   @media (min-width: $tablet-width) {
     width: auto;
     padding: 0 52px;
     margin: 0 30px;
+    margin-top: 30px;
+    padding-top: 80px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {

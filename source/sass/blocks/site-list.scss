@@ -17,6 +17,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-list__item a:hover {
+    color: $basic-darkest06;
+  }
+
+  .site-list__item a:active {
+    color: $basic-darkest03;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .site-list__item--active {
     position: relative;
   }
