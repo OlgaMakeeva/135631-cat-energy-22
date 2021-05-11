@@ -41,3 +41,21 @@
     background: $basic-accent;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list__item--inversion a {
+    color: $basic-light;
+  }
+
+  .site-list__item--inversion a:hover {
+    color: $basic-light06;
+  }
+
+  .site-list__item--inversion a:active {
+    color: $basic-light03;
+  }
+
+  .site-list__item--active::after {
+    background: $basic-light;
+  }
+}

@@ -10,11 +10,32 @@
     background-image: none;
     color: $basic-darkest;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/background/cat-mask.png"), url("../img/background/cat-index.png");
-    background-position: right top;
-    background-size: auto, auto;
+@media (min-width: $desktop-width) {
+  .promo::before {
+    content: "";
+    background-image: url("../img/background/cat-index-desktop.png");
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 720px;
+    height: 694px;
+    top: 0;
+    right: 0;
+    z-index: -2;
+  }
+
+  .promo::after {
+    content: "";
+    position: absolute;
+    width: 720px;
+    height: 694px;
+    background-color: $basic-accent04;
+    top: 0;
+    right: 0;
+    z-index: -2;
   }
 }
 

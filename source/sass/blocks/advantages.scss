@@ -12,20 +12,26 @@
 .advantages__description {
   @include arial(14px, 18px);
   color: $basic-darkest-accent;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     @include arial(16px, 24px);
+    grid-row: 2 / -2;
+    grid-column: 1 / -1;
   }
 }
 
 .advantages__list {
   @include reset-list;
+  display: grid;
+  row-gap: 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 60px;
-    row-gap: 40px;
+    row-gap: 80px;
+    counter-reset: description;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,11 +41,61 @@
 }
 
 .advantages__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 20px;
+
   @media (min-width: $tablet-width) {
+    grid-template-rows: 80px 1fr;
+    row-gap: 30px;
     padding-right: 78px;
+    position: relative;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
   }
+}
+
+.advantages__item::after {
+  @media (min-width: $tablet-width) {
+    font-size: 280px;
+    line-height: 1;
+    color: $main-lighten-accent;
+    counter-increment: description;
+    content: counter(description);
+    position: absolute;
+    top: -38px;
+    left: 115px;
+    z-index: -1;
+  }
+}
+
+.advantages__icon--health {
+  background-image: url("../img/icon/icon-health.svg");
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__icon--using {
+  background-image: url("../img/icon/icon-using.svg");
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__icon--food {
+  background-image: url("../img/icon/icon-food.svg");
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__icon--time {
+  background-image: url("../img/icon/icon-time.svg");
+  display: inline-block;
+  width: 60px;
+  height: 60px;
 }
