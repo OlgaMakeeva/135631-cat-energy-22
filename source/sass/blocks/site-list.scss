@@ -30,6 +30,7 @@
 @media (min-width: $tablet-width) {
   .site-list__item--active {
     position: relative;
+    cursor: default;
   }
 
   .site-list__item--active::after {

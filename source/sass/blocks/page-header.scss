@@ -54,3 +54,10 @@
   align-items: center;
 }
 
+.page-header__wrapper-logo:hover img {
+  opacity: 80%;
+}
+
+.page-header__wrapper-logo:active img {
+  opacity: 60%;
+}

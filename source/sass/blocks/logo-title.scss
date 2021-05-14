@@ -2,3 +2,11 @@
   justify-self: center;
   grid-column: 2 / 3;
 }
+
+.logo-title:hover img {
+  opacity: 80%;
+}
+
+.logo-title:active img {
+  opacity: 60%;
+}
