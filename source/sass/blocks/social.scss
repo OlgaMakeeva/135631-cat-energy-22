@@ -1,1 +1,28 @@
-// comment
+.social__link:hover path {
+  stroke: $basic-accent;
+}
+
+.social__link:active path {
+  opacity: 30%;
+}
+
+.social__link--vkontakte svg {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__link--instagram svg {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__link--facebook svg {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}

@@ -1,8 +1,11 @@
 // Colors
 
 $basic-darkest: #000000;
+$basic-darkest024: rgba(0, 0, 0, 0.24);
 $basic-darkest03: rgba(0, 0, 0, 0.3);
+$basic-darkest04: rgba(0, 0, 0, 0.4);
 $basic-darkest06: rgba(0, 0, 0, 0.6);
+
 $special-darken: #111111;
 $special-darken06: rgba(17, 17, 17, 0.6);
 $special-darken08: rgba(17, 17, 17, 0.8);
@@ -15,11 +18,16 @@ $basic-darken-accent: #666666;
 $basic-dark-accent: #bababa;
 $basic-dark-accent03: rgba(186, 186, 186, 0.3);
 $basic-lighten-accent: #cdcdcd;
+$basic-lighten-accent2: #dcdcdc;
+$basic-lighten-accent3: rgba(0, 0, 0, 0.19);
+$basic-lighten-accent4: rgba(0, 0, 0, 0.2);
+$basic-lighten-accent5: rgba(0, 0, 0, 0.16);
 $basic-light-accent: #d9d9d9;
 $basic-lighten: #d3d3d3;
 $main-light: #ebebeb;
 $main-lighten: #eaeaea;
 $main-light-accent: #e7e7e7;
+$special-light-accent: #e6e6e6;
 $main-lighten-accent: #f2f2f2;
 
 $basic-light: #ffffff;
@@ -28,13 +36,15 @@ $basic-light06: rgba(255, 255, 255, 0.6);
 
 $basic-accent: #68b738;
 $basic-accent03: rgba(104, 183, 56, 0.3);
+$basic-accent04: rgba(104, 183, 56, 0.85);
 $main-accent: #5eaa2f;
 
 $accent-error: #ff8282;
 
 // Viewports
 
-$mobile-width: 767px;
+//$mobile-width: 767px;
+$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 

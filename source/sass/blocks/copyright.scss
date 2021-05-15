@@ -1,9 +1,24 @@
 .copyright__text {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 16px;
+  @include arial (16px, 18px);
+  text-transform: none;
+  color: $basic-darkest-accent;
 }
 
-.copyright__link img {
-  width: 27px;
-  height: 34px;
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 22px;
+  }
+}
+
+.copyright__link:hover path {
+  fill: $basic-accent;
+}
+
+.copyright__link:active {
+  opacity: 30%;
 }
