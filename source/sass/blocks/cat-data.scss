@@ -1,5 +1,9 @@
 .cat-data {
   color: $basic-darkest-accent;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .cat-data__list {

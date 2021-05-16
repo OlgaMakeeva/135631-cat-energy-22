@@ -4,6 +4,11 @@
 
 .contact-owner__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 56px;
+    margin-bottom: 35px;
+  }
 }
 
 .contact-owner__item {
@@ -17,4 +22,17 @@
 .contact-owner__item input::placeholder {
   color: $basic-darkest-accent;
   opacity: 1;
+}
+
+.contact-owner__icon {
+  position: absolute;
+  right: 16px;
+}
+
+.form__input:focus + .contact-owner__icon path {
+  fill: $basic-accent;
+}
+
+.form__input--error + .contact-owner__icon path {
+  fill: $accent-error;
 }
