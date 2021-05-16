@@ -9,3 +9,20 @@
 .cat-program__item {
   padding-bottom: 20px;
 }
+
+.cat-program__label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid $basic-lighten-accent;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 2s;
+  margin-right: 15px;
+}
+
+.cat-program__input:checked + .cat-program__label::before {
+  background-image: url("../img/icon/icon-radiobutton.svg");
+  background-size: 14px 14px;
+}
