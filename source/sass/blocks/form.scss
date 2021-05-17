@@ -61,11 +61,40 @@
 .form__title {
   font-size: 24px;
   line-height: 26px;
-  padding: 25px 0;
+  padding: 25px 20px;
+  display: inline-block;
+  margin-left: -20px;
+  background-color: $basic-light;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 70px 40px 20px;
+    margin-left: -40px;
+  }
+}
+
+.form__title--indent {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.form__line {
+  position: relative;
+}
+
+.form__line::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: $basic-accent;
+  z-index: -1;
+  top: 40px;
+
+  @media (min-width: $tablet-width) {
+    top: 95px;
   }
 }
 
@@ -119,12 +148,26 @@
 
 .form__wrapper {
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    margin: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
+    margin: 0 auto;
+  }
+}
+
+.form__container {
+  display: grid;
+  row-gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    align-items: center;
   }
 }

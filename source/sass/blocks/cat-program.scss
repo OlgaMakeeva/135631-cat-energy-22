@@ -3,22 +3,31 @@
   border-top: 1px solid $basic-light-accent;
   border-bottom: 1px solid $basic-light-accent;
   margin: 0 -20px;
-  padding: 22px 20px 0 20px;
+  padding: 22px 20px 22px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 25px 30px;
     margin: 0;
-    margin-bottom: 60px;
     border: 1px solid $basic-light-accent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 30px 25px 30px;
   }
 }
 
 .cat-program__list {
   @include reset-list;
-}
+  display: grid;
+  row-gap: 14px;
 
-.cat-program__item {
-  padding-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    row-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 13px;
+  }
 }
 
 .cat-program__label::before {

@@ -1,17 +1,19 @@
 .cat-data {
   color: $basic-darkest-accent;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 62px;
-  }
 }
 
 .cat-data__list {
   @include reset-list;
-}
+  display: grid;
+  row-gap: 14px;
 
-.cat-data__item {
-  padding-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    row-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 26px;
+  }
 }
 
 .cat-data__item input::placeholder {

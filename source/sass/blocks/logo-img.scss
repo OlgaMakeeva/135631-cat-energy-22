@@ -1,1 +1,9 @@
-// comment
+.logo-img img {
+  @media (min-width: $tablet-width) {
+    max-width: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+}

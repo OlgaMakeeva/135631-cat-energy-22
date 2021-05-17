@@ -44,14 +44,14 @@
     </div>
   </header>
   <main class="page-form">
-    <div class="page-wrapper">
-      <h1 class="page-form__title">Подбор программы</h1>
+
+      <h1 class="page-form__title page-wrapper">Подбор программы</h1>
       <section class="selection">
         <h2 class="visually-hidden">Форма для подбора программы питания</h2>
-        <p class="selection__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+        <p class="selection__subtitle page-wrapper">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <form class="selection__form form" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
 
-          <div class="form__wrapper">
+          <div class="form__wrapper form__container page-wrapper">
             <fieldset class="form__cat-data cat-data form__fieldset">
               <legend class="visually-hidden">Данные питомца</legend>
               <ul class="cat-data__list">
@@ -96,9 +96,10 @@
             </fieldset>
           </div>
 
+        <div class="form__line">
           <fieldset class="form__contact-owner contact-owner form__fieldset">
-            <div class="form__wrapper">
-              <legend class="form__title">Контактные данные (владельца кота)</legend>
+            <div class="form__wrapper page-wrapper">
+              <legend class="form__title">Контактные данные<br class="form__title--indent"> (владельца кота)</legend>
               <ul class="contact-owner__list form__wrapper">
                 <li class="contact-owner__item">
                   <label class="contact-owner__label form__label">E-mail:*
@@ -137,9 +138,11 @@
               </ul>
             </div>
           </fieldset>
+        </div>
 
+        <div class="form__line">
           <fieldset class="form__comment comment form__fieldset">
-            <div class="form__wrapper">
+            <div class="form__wrapper page-wrapper">
               <legend class="form__title">Комментарий</legend>
               <label class="comment__label">
                 <textarea class="comment__textarea form__input" name="comment"
@@ -147,9 +150,11 @@
               </label>
             </div>
           </fieldset>
+        </div>
 
+        <div class="form__line">
           <fieldset class="form__additionally additionally form__fieldset">
-            <div class="form__wrapper">
+            <div class="form__wrapper page-wrapper">
               <legend class="form__title">Дополнительно</legend>
               <ul class="additionally__list">
                 <li class="additionally__item">
@@ -176,14 +181,15 @@
               </ul>
             </div>
           </fieldset>
+        </div>
 
-          <div class="form__wrapper">
+          <div class="form__wrapper page-wrapper">
             <button class="form__button button" type="submit">Отправить заявку</button>
             <p class="form__legend">* — Обязательные поля</p>
           </div>
         </form>
       </section>
-    </div>
+
   </main>
 
   <footer class="page-footer">
