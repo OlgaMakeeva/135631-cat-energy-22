@@ -14,12 +14,88 @@
   font-size: 16px;
   width: 100%;
   display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__input::placeholder {
+  @include oswald-regular;
+  color: $basic-darkest-accent;
+  opacity: 1;
+}
+
+.form__input {
+  margin-left: 12px;
+  padding: 13px 15px;
+  outline: 1px solid $main-light-accent;
+  border: none;
+  cursor: text;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 20px;
+  }
+}
+
+.form__input:hover {
+  outline: 1px solid $basic-lighten-accent;
+}
+
+.form__input:focus {
+  outline: 2px solid $basic-darkest-accent;
+}
+
+.form__input--error {
+  border: 2px solid $accent-error;
 }
 
 .form__title {
   font-size: 24px;
   line-height: 26px;
-  padding: 25px 0;
+  padding: 25px 20px;
+  display: inline-block;
+  margin-left: -20px;
+  background-color: $basic-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 70px 40px 20px;
+    margin-left: -40px;
+  }
+}
+
+.form__title--indent {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.form__line {
+  position: relative;
+}
+
+.form__line::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: $basic-accent;
+  z-index: -1;
+  top: 40px;
+
+  @media (min-width: $tablet-width) {
+    top: 95px;
+  }
 }
 
 .form__legend {
@@ -28,6 +104,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,6 +126,11 @@
 
   @include oswald-regular;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    height: 52px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 568px;
   }
@@ -65,8 +147,27 @@
 }
 
 .form__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 40px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.form__container {
+  display: grid;
+  row-gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    align-items: center;
   }
 }

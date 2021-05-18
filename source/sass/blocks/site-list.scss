@@ -57,7 +57,13 @@
     color: $basic-light03;
   }
 
-  .site-list__item--active::after {
-    background: $basic-light;
+  .site-list__item--inversion-active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: white;
   }
 }

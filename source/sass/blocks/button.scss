@@ -8,4 +8,13 @@
   line-height: 20px;
   color: $basic-light;
   text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $main-accent;
+}
+
+.button:active {
+  color: $basic-light03;
 }
