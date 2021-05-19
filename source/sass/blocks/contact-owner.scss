@@ -1,11 +1,13 @@
 .contact-owner {
   color: $basic-darkest-accent;
+  margin-bottom: 20px;
 }
 
 .contact-owner__list {
   @include reset-list;
   display: grid;
   row-gap: 14px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     margin-top: 56px;
@@ -34,10 +36,26 @@
   right: 16px;
 }
 
-.form__input:focus + .contact-owner__icon path {
+.form__input:focus + .contact-owner__icon--mail path {
+  stroke: $basic-accent;
+}
+
+.form__input:focus + .contact-owner__icon--mail line {
+  stroke: $basic-accent;
+}
+
+.form__input:focus + .contact-owner__icon--phone path {
   fill: $basic-accent;
 }
 
-.form__input--error + .contact-owner__icon path {
+.form__input--error + .contact-owner__icon--phone path {
   fill: $accent-error;
+}
+
+.form__input--error + .contact-owner__icon--mail path {
+  stroke: $accent-error;
+}
+
+.form__input--error + .contact-owner__icon--mail line {
+  stroke: $accent-error;
 }

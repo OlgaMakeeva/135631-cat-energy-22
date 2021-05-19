@@ -1,5 +1,6 @@
 .additionally__list {
   @include reset-list;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
