@@ -99,6 +99,12 @@
   }
 }
 
+.additional-goods .form__line::before {
+  @media (min-width: $tablet-width) {
+    top: 20px;
+  }
+}
+
 .form__legend {
   line-height: 16px;
   text-align: center;

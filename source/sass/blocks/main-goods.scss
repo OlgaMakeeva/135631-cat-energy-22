@@ -17,18 +17,23 @@
 
 .main-goods__item {
   flex-basis: 100%;
-  margin-bottom: 20px;
   display: grid;
   grid-template-rows: auto auto auto auto;
   grid-template-columns: 1fr 1fr;
+  align-items: end;
+  border-top: 1px solid $main-light;
+  margin: 0 -20px;
+  padding: 20px 20px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 35%;
+    margin: 0;
     margin-bottom: 60px;
     padding-left: 39px;
     padding-right: 37px;
     padding-bottom: 40px;
     background-color: $main-lighten-accent;
+    border: 0;
   }
 
   @media (min-width: $desktop-width) {
