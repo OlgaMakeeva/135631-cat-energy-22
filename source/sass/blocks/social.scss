@@ -1,4 +1,9 @@
-.social__link:hover path {
+.social__link--instagram:hover path,
+.social__link--vkontakte:hover path {
+  fill: $basic-accent;
+}
+
+.social__link--facebook:hover path {
   stroke: $basic-accent;
 }
 

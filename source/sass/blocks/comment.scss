@@ -4,10 +4,11 @@
   box-sizing: border-box;
   padding: 10px 15px;
   resize: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     height: 174px;
-    margin-right: 35px;
     margin-top: 56px;
   }
 }
