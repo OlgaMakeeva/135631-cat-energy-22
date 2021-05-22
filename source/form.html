@@ -6,23 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__wrapper-logo">
-        <a class="page-header__logo logo-img" href="#">
-          <img src="img/logo-img.svg" width="33" height="37" alt="Рыжий кот">
+        <a class="page-header__logo logo-img" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logos/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logos/logo-tablet.svg">
+            <img src="img/logos/logo-mobile.svg" width="33" height="37" alt="Рыжий кот">
+          </picture>
         </a>
         <a class="page-header__logo logo-title" href="index.html">
-          <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy">
-        </a>
-        <a class="page-header__logo-tablet logo-img" href="index.html">
-          <img src="img/logo-tablet.svg" width="174" height="51" alt="Рыжий кот">
-        </a>
-        <a class="page-header__logo-desktop logo-img" href="index.html">
-          <img src="img/logo-desktop.svg" width="174" height="51" alt="Рыжий кот">
+            <img src="img/logos/logo-title.svg" width="101" height="18" alt="Cat energy">
         </a>
       </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -208,8 +210,8 @@
       <section class="page-footer__main">
         <div class="page-wrapper page-footer__container">
           <h2 class="visually-hidden">Соцсети</h2>
-          <a class="page-footer__main-logo logo-title" href="#">
-            <img src="img/logo-title.svg" width="128" height="24" alt="Cat energy">
+          <a class="page-footer__main-logo" href="#">
+            <img src="img/logos/logo-footer.svg" width="128" height="24" alt="Cat energy">
           </a>
           <div class="page-footer__social social">
             <ul class="social-list">

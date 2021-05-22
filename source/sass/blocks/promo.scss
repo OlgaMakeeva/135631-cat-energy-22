@@ -1,10 +1,14 @@
 .promo {
   color: $basic-light;
   text-align: center;
-  background-image: url("../img/background/cat-mask.png"), url("../img/background/cat-index.png");
+  background-image: url("../img/background/cat-mask.png"), url("../img/background/cat-index-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 302px, auto;
   background-position-x: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/cat-mask.png"), url("../img/background/cat-index-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;

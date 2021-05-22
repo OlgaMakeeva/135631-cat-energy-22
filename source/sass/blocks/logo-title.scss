@@ -1,6 +1,10 @@
 .logo-title {
   justify-self: center;
   grid-column: 2 / 3;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .logo-title:hover img {

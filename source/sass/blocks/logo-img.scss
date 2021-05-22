@@ -1,9 +1,11 @@
 .logo-img img {
   @media (min-width: $tablet-width) {
-    max-width: none;
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 200px;
+    width: 202px;
+    height: 59px;
   }
 }
