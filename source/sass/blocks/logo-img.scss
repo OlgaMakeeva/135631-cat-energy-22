@@ -1,7 +1,10 @@
 .logo-img img {
+  padding-left: 20px;
+
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {

@@ -10,6 +10,8 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 
 <body class="page__body page__body--background">
@@ -91,7 +93,7 @@
             <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages__item">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
           </li>
         </ul>
       </div>
@@ -114,10 +116,15 @@
         </div>
         <p class="example__spending">Затраты на питание: <span class="example__spending-space">15 000 руб.</span></p>
         <div class="example__img-wrapper">
-          <img class="example__img example__img--after" src="img/content/cat-after.png" width="251" height="240"
-            alt="Худой кот">
-          <img class="example__img example__img--before" src="img/content/cat-before.png" width="311" height="232"
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/cat-before-desktop@1x.webp, content/cat-before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/cat-before-tablet@1x.webp, content/cat-before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/cat-before-mobile@1x.webp, content/cat-before-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/content/cat-before-desktop@1x.png, content/cat-before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/cat-before-tablet@1x.png, content/cat-before-tablet@2x.png 2x">
+            <img class="example__img" src="img/content/cat-before-mobile@1x.png" srcset="img/content/cat-before-mobile@2x.png 2x" width="293" height="232"
             alt="Толстый кот">
+          </picture>
         </div>
         <div class="example__switch">
           <span class="example__switch-text">Было</span>

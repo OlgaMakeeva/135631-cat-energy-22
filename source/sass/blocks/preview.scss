@@ -34,7 +34,8 @@
 .preview__description {
   @include arial(14px, 18px);
   color: $basic-darkest-accent;
-  padding-bottom: 23px;
+  margin-bottom: 44px;
+  margin-top: 22px;
   border-bottom: 1px solid $basic-light-accent;
 
   @media (min-width: $tablet-width) {
@@ -53,6 +54,8 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
+    font-size: 20px;
+    line-height: auto;
   }
 }
 
@@ -86,7 +89,7 @@
   background-color: $main-lighten-accent;
   position: relative;
   width: auto;
-  padding: 20px 20px;
+  padding: 25px 20px;
   margin: 20px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -95,11 +98,12 @@
     width: auto;
     padding-left: 50px;
     padding-right: 20px;
-    margin: 30px 30px;
-    padding-top: 80px;
-    padding-bottom: 52px;
+    margin: 30px;
+    margin-top: 0;
+    padding-top: 77px;
+    padding-bottom: 77px;
     display: grid;
-    grid-template-columns: 1fr 268px;
+    grid-template-columns: 1fr 264px;
     grid-template-rows: max-content max-content max-content;
   }
 
@@ -123,7 +127,7 @@
     width: 200px;
     height: 211px;
     position: absolute;
-    right: 0;
+    right: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -142,14 +146,17 @@
   background-repeat: no-repeat;
   width: 67px;
   height: 50px;
-  padding-right: 20px;
+  padding-right: 14px;
+  margin-left: -10px;
+  margin-top: -5px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/icon/icon-cat-muscle-tablet.svg");
     width: 268px;
     height: 200px;
     position: absolute;
-    right: 0;
+    right: 10px;
+    bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -158,5 +165,11 @@
     height: 108px;
     position: relative;
     padding-right: 62px;
+  }
+}
+
+.preview__wrapper:nth-child(2) .preview__description {
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
   }
 }
