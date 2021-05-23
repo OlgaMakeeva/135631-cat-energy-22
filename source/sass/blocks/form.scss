@@ -44,6 +44,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 20px;
+    margin-left: 16px;
   }
 }
 
@@ -70,7 +71,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 70px 40px 20px;
+    padding: 0 40px 20px;
     margin-left: -40px;
   }
 }
@@ -95,7 +96,7 @@
   top: 15px;
 
   @media (min-width: $tablet-width) {
-    top: 95px;
+    top: 22px;
   }
 }
 
@@ -106,13 +107,15 @@
 }
 
 .form__legend {
-  line-height: 16px;
+  @include arial (14px, 16px);
   text-align: center;
+  margin-top: 25px;
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
     font-size: 16px;
     display: inline-block;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -147,11 +150,15 @@
 
 .form {
   padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 66px;
     padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 80px;
   }
 }
 
@@ -171,6 +178,7 @@
 
   @media (min-width: $tablet-width) {
     row-gap: 72px;
+    padding-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -178,5 +186,10 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
     align-items: center;
+    padding-bottom: 68px;
   }
+}
+
+.form__comment {
+  margin-top: -15px;
 }

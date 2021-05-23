@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
     margin-bottom: 62px;
     margin-top: 65px;
   }
@@ -53,16 +53,12 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .contacts__wrapper {
+  @media (min-width: $tablet-width) {
     padding: 0 70px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .contacts__wrapper {
+  @media (min-width: $desktop-width) {
     position: absolute;
     background-color: $basic-light;
     width: 430px;
@@ -70,6 +66,9 @@
     top: 95px;
     padding-top: 66px;
     left: 110px;
+    display: grid;
+    grid-template-columns: 171px 171px;
+    column-gap: 80px;
   }
 }
 

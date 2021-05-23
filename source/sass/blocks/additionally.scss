@@ -7,20 +7,24 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 565px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 22px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    margin-bottom: 30px;
+    padding-right: 20px;
   }
 }
 
 .additionally__item {
-  padding-bottom: 25px;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     min-width: 220px;
+    padding-bottom: 30px;
   }
 }
 
