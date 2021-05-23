@@ -60,6 +60,11 @@
     margin-left: 82px;
     padding: 35px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 85px;
+    padding-bottom: 30px;
+  }
 }
 
 .promo__slogan {
