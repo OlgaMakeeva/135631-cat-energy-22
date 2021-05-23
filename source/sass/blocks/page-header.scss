@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    z-index: 3;
+  }
 }
 
 .page-header__wrapper {
