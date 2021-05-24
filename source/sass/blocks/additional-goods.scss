@@ -1,31 +1,45 @@
 .additional-goods__promo {
-  background-image: url("../img/background/cat-catalog.png");
+  background-image: url("../img/background/cat-gift-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 289px;
-  margin-top: 39px;
-  margin-bottom: 35px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   background-color: $basic-accent04;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/cat-gift-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
+    background-image: url("../img/background/cat-gift-tablet@1x.png");
     height: 200px;
-    margin-top: 69px;
+    margin-top: 44px;
     text-align: left;
-    margin-bottom: 69px;
+    margin-bottom: 54px;
     position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/cat-gift-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../img/background/cat-gift-mobile@1x.png");
     width: 245px;
     height: 289px;
     margin-top: 0;
     display: flex;
     text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/cat-gift-mobile@2x.png");
+    }
   }
 }
 
@@ -59,13 +73,14 @@
   padding: 0 22px;
   margin: 0;
   margin-left: -20px;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
     padding-left: 36px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,11 +112,15 @@
 
 .additional-goods__item {
   display: flex;
+  row-gap: 14px;
   flex-wrap: wrap;
   border-top: 1px solid $basic-lighten-accent;
+  padding-top: 13px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+    padding: 24px 38px 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,7 +137,6 @@
 
 .additional-goods__item:not(:last-child) {
   @media (min-width: $tablet-width) {
-    padding: 5px 38px 28px 38px;
     border-left: 1px solid $basic-lighten-accent;
     border-right: 1px solid $basic-lighten-accent;
   }
@@ -128,6 +146,17 @@
     border-left: none;
     border-right: none;
     align-items: center;
+  }
+}
+
+.additional-goods__item:nth-child(5) {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
   }
 }
 
