@@ -1,22 +1,27 @@
 .contact-owner {
   color: $basic-darkest-accent;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .contact-owner__list {
   @include reset-list;
   display: grid;
   row-gap: 14px;
-  margin-top: 20px;
+  margin-top: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 56px;
+    margin-top: 60px;
     row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 76px;
+    margin-top: 52px;
   }
 }
 

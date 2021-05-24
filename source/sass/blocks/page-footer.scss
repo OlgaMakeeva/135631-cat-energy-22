@@ -52,3 +52,11 @@
 .page-footer__copyright {
   padding: 22px 0;
 }
+
+.page-footer__contacts--accent {
+  background-color: $main-lighten-accent;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-light;
+  }
+}
