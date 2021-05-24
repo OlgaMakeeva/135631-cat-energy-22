@@ -9,4 +9,8 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+<<<<<<< HEAD
+build/
+=======
 build
+>>>>>>> fa21abdefc0439b1dc5bfd4bcbbe95933b222ed4
