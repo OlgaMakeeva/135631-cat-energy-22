@@ -1,13 +1,12 @@
 .preview {
-  @media (min-width: $tablet-width) {
-    margin-top: 210px;
-  }
-
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
     padding: 0 80px;
-    margin-top: 260px;
+    margin-top: 74px;
   }
 }
 
@@ -38,14 +37,24 @@
 .preview__description {
   @include arial(14px, 18px);
   color: $basic-darkest-accent;
-  padding-bottom: 23px;
+  margin-bottom: 20px;
+  margin-top: 22px;
   border-bottom: 1px solid $basic-light-accent;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     border: none;
     grid-column: 1 / 2;
+    margin-bottom: 44px;
 
     @include arial(16px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 30px;
+    margin-bottom: 34px;
+    margin-top: 40px;
+    padding-bottom: 0;
   }
 }
 
@@ -57,6 +66,12 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
+    font-size: 20px;
+    line-height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 34px;
   }
 }
 
@@ -69,6 +84,10 @@
   background-image: url("../img/icon/icon-arrow.svg");
   background-repeat: no-repeat;
   position: absolute;
+
+  @media (min-width: $desktop-width) {
+    left: 170px;
+  }
 }
 
 .preview__link:hover::after {
@@ -90,8 +109,8 @@
   background-color: $main-lighten-accent;
   position: relative;
   width: auto;
-  padding: 20px 20px;
-  margin: 20px 20px;
+  padding: 25px 20px;
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
 
@@ -99,18 +118,20 @@
     width: auto;
     padding-left: 50px;
     padding-right: 20px;
-    margin: 0 30px;
-    margin-top: 30px;
-    padding-top: 80px;
-    padding-bottom: 52px;
+    margin: 30px;
+    margin-top: 0;
+    padding-top: 70px;
+    padding-bottom: 60px;
     display: grid;
-    grid-template-columns: 1fr 268px;
+    grid-template-columns: 1fr 264px;
     grid-template-rows: max-content max-content max-content;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 40px;
+    margin: 0;
   }
 }
 
@@ -128,7 +149,7 @@
     width: 200px;
     height: 211px;
     position: absolute;
-    right: 0;
+    right: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -137,6 +158,8 @@
     height: 106px;
     position: relative;
     padding-right: 62px;
+    left: 0;
+    top: 0;
   }
 }
 
@@ -147,14 +170,17 @@
   background-repeat: no-repeat;
   width: 67px;
   height: 50px;
-  padding-right: 20px;
+  padding-right: 14px;
+  margin-left: -10px;
+  margin-top: -5px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/icon/icon-cat-muscle-tablet.svg");
     width: 268px;
     height: 200px;
     position: absolute;
-    right: 0;
+    right: 10px;
+    bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,6 +188,13 @@
     width: 142px;
     height: 108px;
     position: relative;
-    padding-right: 62px;
+    padding-right: 30px;
+    top: 10px;
+  }
+}
+
+.preview__wrapper:nth-child(2) .preview__description {
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
   }
 }
