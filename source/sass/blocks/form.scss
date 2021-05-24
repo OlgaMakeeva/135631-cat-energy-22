@@ -100,12 +100,6 @@
   }
 }
 
-.additional-goods .form__line::before {
-  @media (min-width: $tablet-width) {
-    top: 20px;
-  }
-}
-
 .form__legend {
   @include arial (14px, 16px);
   text-align: center;
