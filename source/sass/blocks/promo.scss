@@ -107,6 +107,10 @@
   background-color: $main-accent;
 }
 
+.promo__button:focus {
+  background-color: $main-accent;
+}
+
 .promo__button:active {
   color: $basic-light03;
 }

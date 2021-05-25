@@ -1,9 +1,17 @@
 .product__more-link {
+  background-color: $main-lighten-accent;
+  color: $basic-darkest-accent;
+  width: 100%;
   grid-row: 4 / 5;
   grid-column: 1 / -1;
 }
 
 .product__more-link:hover {
+  background-color: $main-light;
+  color: $basic-darkest-accent;
+}
+
+.product__more-link:focus {
   background-color: $main-light;
   color: $basic-darkest-accent;
 }
