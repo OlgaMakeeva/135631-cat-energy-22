@@ -8,10 +8,14 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 160px;
+    margin-bottom: 60px;
+    row-gap: 140px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
+    margin-bottom: 70px;
   }
 }
 
@@ -23,15 +27,16 @@
   align-items: end;
   border-top: 1px solid $main-light;
   margin: 0 -20px;
-  padding: 20px 20px;
+  padding: 18px 20px 25px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 35%;
+    position: relative;
     margin: 0;
-    margin-bottom: 60px;
     padding-left: 39px;
     padding-right: 37px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    padding-top: 161px;
     background-color: $main-lighten-accent;
     border: 0;
   }
@@ -40,6 +45,7 @@
     flex-basis: 14%;
     padding-left: 37px;
     padding-right: 37px;
+    padding-bottom: 46px;
     margin-right: 80px;
   }
 }

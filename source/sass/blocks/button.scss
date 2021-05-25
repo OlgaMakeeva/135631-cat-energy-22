@@ -15,6 +15,10 @@
   background-color: $main-accent;
 }
 
+.button:focus {
+  background-color: $main-accent;
+}
+
 .button:active {
   color: $basic-light03;
 }
