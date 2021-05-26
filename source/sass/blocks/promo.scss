@@ -51,7 +51,7 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
-  padding: 26px 0;
+  padding: 28px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -59,13 +59,14 @@
     text-align: left;
     margin-left: 86px;
     padding: 38px 0;
-    padding-bottom: 36px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 85px;
     padding-bottom: 32px;
     margin-left: 80px;
+    max-width: 500px;
   }
 }
 
@@ -84,6 +85,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
+    max-width: 450px;
   }
 }
 

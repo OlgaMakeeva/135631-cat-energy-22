@@ -8,14 +8,16 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 160px;
-    margin-bottom: 60px;
+    margin-top: 152px;
+    margin-bottom: 65px;
     row-gap: 140px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
-    margin-bottom: 70px;
+    margin-bottom: 82px;
+    margin-top: 164px;
+    row-gap: 146px;
   }
 }
 
@@ -35,7 +37,7 @@
     margin: 0;
     padding-left: 39px;
     padding-right: 37px;
-    padding-bottom: 50px;
+    padding-bottom: 39px;
     padding-top: 161px;
     background-color: $main-lighten-accent;
     border: 0;
@@ -43,9 +45,9 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 14%;
-    padding-left: 37px;
-    padding-right: 37px;
-    padding-bottom: 46px;
+    padding-left: 39px;
+    padding-right: 35px;
+    padding-bottom: 32px;
     margin-right: 80px;
   }
 }
