@@ -5,11 +5,16 @@
 .page-footer__main-logo {
   border-bottom: 1px solid $basic-light-accent;
   text-align: center;
-  padding-top: 39px;
+  padding-top: 36px;
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
   }
 }
 
@@ -19,7 +24,12 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-left: 25px;
+    margin-left: 28px;
+    padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
   }
 }
 
@@ -51,6 +61,14 @@
 
 .page-footer__copyright {
   padding: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
 }
 
 .page-footer__contacts--accent {

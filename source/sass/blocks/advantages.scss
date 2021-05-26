@@ -9,11 +9,12 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 78px;
+    margin-bottom: 70px;
   }
 }
 
@@ -67,7 +68,7 @@
     row-gap: 30px;
     padding-right: 78px;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {

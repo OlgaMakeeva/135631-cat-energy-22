@@ -17,7 +17,7 @@
   line-height: 40px;
   font-weight: normal;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -30,10 +30,6 @@
   color: $basic-darkest-accent;
   margin-bottom: 26px;
   letter-spacing: -0.1px;
-
-  @media (min-width: $tablet-width) {
-    @include arial(16px, 24px);
-  }
 }
 
 .example__spending {
@@ -42,31 +38,45 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 34px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
     margin-top: 10px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
   }
 }
 
 .example__img {
+  min-width: 311px;
+  margin-left: -20px;
+  margin-right: -20px;
+
   @media (min-width: $tablet-width) {
     width: 708px;
     height: 620px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 690px;
+  @media (min-width: $desktop-width) {
+    max-width: 690px;
     height: 656px;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-top: 20px;
   }
 }
 
 .example__switch {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 .example__switch-text {
@@ -112,6 +122,10 @@
     height: 6px;
     border: none;
     background-color: $basic-lighten-accent2;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 6px;
   }
 }
 
@@ -191,7 +205,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / 4;
     margin-bottom: 0;
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -206,7 +220,7 @@
     grid-template-columns: auto auto auto;
     grid-template-rows: repeat(5, auto);
     margin-top: 0;
-    padding-top: 40px;
+    padding-top: 36px;
   }
 
   .example__title {
@@ -216,9 +230,10 @@
   }
 
   .example__text {
+    @include arial(16px, 24px);
     grid-row: 2;
     grid-column: 1 / 4;
-    margin-bottom: 56px;
+    margin-bottom: 52px;
   }
 
   .example__spending {
@@ -232,7 +247,7 @@
     grid-column: 1 / 4;
     justify-self: center;
     padding-top: 0;
-    margin-top: -50px;
+    margin-top: -58px;
     height: min-content;
   }
 }
@@ -242,13 +257,14 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto auto;
-    padding-top: 22px;
-    padding-bottom: 18px;
+    padding-top: 18px;
+    padding-bottom: 0;
   }
 
   .example__title {
     grid-row: 1;
     grid-column: 1 / 2;
+    padding-bottom: 36px;
   }
 
   .example__text {
@@ -257,7 +273,7 @@
     max-width: 436px;
     letter-spacing: normal;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .example__result {
@@ -270,7 +286,7 @@
     grid-column: 1 / 2;
     justify-self: start;
     width: auto;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
@@ -281,7 +297,7 @@
   .example__switch {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-    margin-top: 10px;
+    margin-top: 4px;
     margin-left: 30px;
     height: max-content;
   }
