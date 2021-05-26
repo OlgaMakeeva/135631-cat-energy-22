@@ -1,5 +1,9 @@
 .site-list {
   @include reset-list;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
+  }
 }
 
 .site-list__item {
