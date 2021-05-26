@@ -1,5 +1,7 @@
 .goods__link {
   color: $special-dark;
+  font-size: 16px;
+  line-height: 16px;
 
   flex-basis: 100%;
 
@@ -24,6 +26,7 @@
   flex-wrap: wrap;
   flex-basis: 100%;
   justify-content: space-between;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     flex-basis: auto;
@@ -43,6 +46,7 @@
 .goods__promo-text {
   @include arial (16px, 20px);
   color: $basic-light;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;
